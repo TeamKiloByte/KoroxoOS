@@ -23,3 +23,25 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+const heroTitle = document.querySelector(".hero h1");
+const glassHeader = document.getElementById("glass-header");
+
+window.addEventListener("scroll", () => {
+  const scrollY = window.scrollY;
+
+  // tweak this threshold if needed
+  const triggerPoint = 120;
+
+  if (scrollY > triggerPoint) {
+    glassHeader.classList.add("active");
+
+    // subtle shrink + fade hero
+    heroTitle.style.opacity = "0";
+    heroTitle.style.transform = "translateY(-20px) scale(0.92)";
+  } else {
+    glassHeader.classList.remove("active");
+
+    heroTitle.style.opacity = "1";
+    heroTitle.style.transform = "translateY(0) scale(1)";
+  }
+});
