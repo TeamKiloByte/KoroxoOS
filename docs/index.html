@@ -1,5 +1,127 @@
 <!DOCTYPE html>
-<html>
-  <head></head>
-  <body></body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KoroxoOS</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<input type="checkbox" id="nav-toggle" />
+
+<label for="nav-toggle" class="hamburger">☰</label>
+
+<aside class="sidebar">
+  <div class="brand">
+    <img src="assets/logo.png" alt="KoroxoOS" />
+    <span>KoroxoOS</span>
+  </div>
+
+  <nav>
+    <a href="#overview">Overview</a>
+    <a href="#download">Download</a>
+    <a href="#features">Features</a>
+    <a href="#docs">Docs</a>
+    <a href="#changelog">Changelog</a>
+    <a href="#roadmap">Roadmap</a>
+    <a href="#community">Community</a>
+    <a href="#security">Security</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+</aside>
+
+<main class="content">
+
+<section id="overview" class="hero">
+  <h1>KoroxoOS</h1>
+  <p>
+    A modular, experimental operating platform designed for exploration,
+    low-level control, and system-level learning.
+  </p>
+</section>
+
+<section id="download" class="panel">
+  <h2>Download</h2>
+
+  <label class="select-label">Version</label>
+  <select id="versionSelect">
+    <option>v0.1.1 – Stable</option>
+    <option>v0.2.0 – Experimental</option>
+  </select>
+
+  <button class="btn primary">Download Build</button>
+</section>
+
+<section id="features" class="panel">
+  <h2>Features</h2>
+  <ul>
+    <li>Monolithic kernel with modular subsystems</li>
+    <li>Explicit memory & process control</li>
+    <li>Developer-first architecture</li>
+    <li>Designed for learning & experimentation</li>
+  </ul>
+</section>
+
+<section id="docs" class="panel">
+  <h2>Documentation</h2>
+  <p>System internals, build process, and APIs.</p>
+  <button class="btn">View Docs</button>
+</section>
+
+<section id="changelog" class="panel">
+  <h2>Changelog</h2>
+  <pre>
+v0.2.0 – Scheduler rewrite (WIP)
+v0.1.1 – Improved memory mapping
+v0.1.0 – Initial boot + shell
+  </pre>
+</section>
+
+<section id="roadmap" class="panel">
+  <h2>Roadmap</h2>
+  <ul>
+    <li>Userspace loader</li>
+    <li>Filesystem abstraction</li>
+    <li>Driver sandboxing</li>
+  </ul>
+</section>
+
+<section id="community" class="panel">
+  <h2>Community</h2>
+  <p>Join development & discussion.</p>
+  <button class="btn">Discord</button>
+  <button class="btn">GitHub</button>
+</section>
+
+<section id="security" class="panel">
+  <h2>Security Philosophy</h2>
+  <p>
+    KoroxoOS prioritizes transparency, auditability,
+    and explicit trust boundaries over obscurity.
+  </p>
+</section>
+
+<section id="faq" class="panel">
+  <h2>FAQ</h2>
+  <details>
+    <summary>Is KoroxoOS production-ready?</summary>
+    <p>No. It is experimental by design.</p>
+  </details>
+  <details>
+    <summary>Who is this for?</summary>
+    <p>Students, hackers, and systems enthusiasts.</p>
+  </details>
+</section>
+
+</main>
+
+<footer>
+  © 2026 KoroxoOS · Operated by Team KiloByte
+</footer>
+
+<script src="script.js"></script>
+</body>
 </html>
